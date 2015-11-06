@@ -1,0 +1,189 @@
+#imgImagenCamara{
+	width:100%;
+	height:auto;
+}
+
+.listaTienda {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 10px !important;
+	margin: 10px !important;
+	box-shadow: 0px 0px 5px #ccc;
+	text-align: center;
+}
+.txtPromos{
+	text-align:center;
+	margin:0px;
+	padding:5px;
+}
+img.botonesTiendas{
+	height:150px;
+	border:1px solid #ddd;
+	border-radius:4px;
+}
+
+#divTarjetasGuardadas{
+	margin:5px 10px;
+}
+
+#divLoader{
+	background:#fff;
+	border:1px solid #aaa;
+	border-radius:8px;
+	box-shadow:0 0 5px #000;
+	padding:15px;
+	text-align:center;
+	width:100px;
+	margin-top:-50px;
+	margin-left:-50px;
+}
+
+#txtPromo0,#txtPromo1,#txtPromo2,#txtPromo3,#txtPromo4,#txtPromo5,#txtPromo6{
+	text-align:center;
+	padding:10px;
+	margin:0;
+}
+
+#puntosCliente{
+	font-size:24px;
+	font-weight:bold;
+	/*color:#64c0f3;*/
+	color:#EE0000;
+}
+
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after{
+	background-color: #EE0000 /*{global-icon-color}*/;
+}
+
+.ui-btn-icon-left.ui-btn-active:after,
+.ui-btn-icon-right.ui-btn-active:after,
+.ui-btn-icon-top.ui-btn-active:after,
+.ui-btn-icon-bottom.ui-btn-active:after,
+.ui-btn-icon-notext.ui-btn-active:after{
+	background-color: #EE0000 /*{global-icon-color}*/;
+}
+
+.iw-container{
+	min-height:200px;
+}
+
+.iw-container  .iw-title {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   padding: 5px 10px;
+   background-color: #48b5e9;
+   color: white;
+   margin: 1px;
+   margin-bottom:10px;
+   border-radius: 2px 2px 0 0; /* In accordance with the rounding of the default infowindow corners. */
+}
+#tituloTienda{
+	font-size:16px;
+	padding:10px;
+}
+
+#loginDiv{
+	/*margin:10px -16px;*/
+}
+
+#contieneTodo{
+	width:100%;
+}
+
+#nombreTienda{
+	color:#64c0f3;
+	font-weight:bold;
+	font-size:18px;
+}
+#noPromos{
+	padding:10px;
+}
+
+.oculto{
+	display:none;
+}
+.listaitem{
+	padding:5px;
+}
+.botonemail{
+	font-size:12px;
+	background-image: url(../images/mail.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 5px 5px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 20px;           /* make this the size of your image */
+    padding:5px;
+    padding-left: 25px;     /* make text start to the right of the image */
+    vertical-align: middle;
+    border:1px solid #666;
+    border-radius:10px;
+    background-color:#dddddd;
+    text-decoration:none;
+    line-height:35px;
+}
+.botontelefono{
+	font-size:12px;
+	background-image: url(../images/phone.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 5px 5px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 20px;           /* make this the size of your image */
+    padding:5px;
+    padding-left: 25px;     /* make text start to the right of the image */
+    vertical-align: middle;
+    border:1px solid #666;
+    border-radius:10px;
+    background-color:#dddddd;
+    margin-right:30px;
+    text-decoration:none;
+    line-height:35px;
+}
+
+.botonwebsite{
+	font-size:12px;
+	background-image: url(../images/website.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 5px 5px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 20px;           /* make this the size of your image */
+    padding:5px;
+    padding-left: 25px;     /* make text start to the right of the image */
+    vertical-align: middle;
+    border:1px solid #666;
+    border-radius:10px;
+    background-color:#dddddd;
+    margin-right:30px;
+    text-decoration:none;
+    line-height:35px;
+}
+
+.botonfacebook{
+	font-size:12px;
+	background-image: url(../images/facebook.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 5px 5px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 20px;           /* make this the size of your image */
+    padding:5px;
+    padding-left: 25px;     /* make text start to the right of the image */
+    vertical-align: middle;
+    border:1px solid #666;
+    border-radius:10px;
+    background-color:#dddddd;
+    margin-right:30px;
+    text-decoration:none;
+    line-height:35px;
+}
