@@ -56,7 +56,7 @@ img.botonesTiendas{
 .ui-btn-icon-top:after,
 .ui-btn-icon-bottom:after,
 .ui-btn-icon-notext:after{
-	background-color: #EE0000 /*{global-icon-color}*/;
+	background-color: #781a78 /*{global-icon-color}*/;
 }
 
 .ui-btn-icon-left.ui-btn-active:after,
@@ -64,7 +64,7 @@ img.botonesTiendas{
 .ui-btn-icon-top.ui-btn-active:after,
 .ui-btn-icon-bottom.ui-btn-active:after,
 .ui-btn-icon-notext.ui-btn-active:after{
-	background-color: #EE0000 /*{global-icon-color}*/;
+	background-color: #781a78 /*{global-icon-color}*/;
 }
 
 .iw-container{
