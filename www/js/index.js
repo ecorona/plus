@@ -1,8 +1,4 @@
-/*
- * Listo!
- */
-
-var plusServer="http://mymasterpoints.com/system/";
+var plusServer="http://plusconsentido.mx/v2/";
 var getScript="index.php/tienda/getMobil";
 var gcmScript="index.php/tienda/saveRegGCM";
 var optionScript="index.php/tienda/mobileSaveOpt";
@@ -10,14 +6,6 @@ var miUbicacion={lat:0,lng:0}, mapa, watchID, estado=0,retornoObj,
 	bounds, myWindow, thePush, panelOpen=false, dorefresh=false, empresas,
 	mapaIniciado=false, markersArray=[],mapaCargado=false,idioma,devicePlatform,pushNotification,listoesto;
 	
-// Depending on the device, a few examples are: devicePlatform=
-//   - "Android"
-//   - "BlackBerry"
-//   - "iOS"
-//   - "webOS"
-//   - "WinCE"
-//   - "Tizen"
-
 var app = {
 	debug:false,
     // Application Constructor
@@ -78,9 +66,9 @@ var app = {
     },
     //inicio de autologin
     autoLogin:function(){
-    	var tarjeta = window.localStorage.getItem("masterpoints_userTarjeta");
-		var email = window.localStorage.getItem("masterpoints_userEmail");
-		var fnac = window.localStorage.getItem("masterpoints_userFnac");
+    	var tarjeta = window.localStorage.getItem("plusconsentido_userTarjeta");
+		var email = window.localStorage.getItem("plusconsentido_userEmail");
+		var fnac = window.localStorage.getItem("plusconsentido_userFnac");
 		if(tarjeta!=null) $("#tarjeta").val(tarjeta);
 		if(email!=null) $("#email").val(email);
 		if(fnac!=null) $("#fnac").val(fnac);
@@ -113,7 +101,7 @@ var app = {
 		}
     },
     alerta:function (message){
-		navigator.notification.alert(message, this.alertCallback, 'My Master Points', 'Ok');
+		navigator.notification.alert(message, this.alertCallback, 'Plus Consentido', 'Ok');
 	},
 	alertCallback:function (){
 		
@@ -218,9 +206,9 @@ function doLogin(cambiar,isrefresh){
             if(retorno.resultado=="OK"){//almacenamos la tarjeta
             	retornoObj=retorno;
             	
-            	window.localStorage.setItem("masterpoints_userTarjeta",datos.tarjeta);
-            	window.localStorage.setItem("masterpoints_userEmail",datos.email);
-            	window.localStorage.setItem("masterpoints_userFnac",datos.fnac);
+            	window.localStorage.setItem("plusconsentido_userTarjeta",datos.tarjeta);
+            	window.localStorage.setItem("plusconsentido_userEmail",datos.email);
+            	window.localStorage.setItem("plusconsentido_userFnac",datos.fnac);
             	
 	            registroPush();
 	            
@@ -413,7 +401,7 @@ $(document).on("pagecontainerchange", function( event, ui ) {
 });
 
 function showSpinner(){
-	window.plugins.spinnerDialog.show('My Master Points','',true);
+	window.plugins.spinnerDialog.show('Plus Consentido','',true);
 }
 
 function doAgregarUbicacionesMapa(){
@@ -579,7 +567,7 @@ function saveReg(regid){
 	app.log('guardando token en db:'+regid);
 	var datos={
     	regid:regid,
-        tarjeta:window.localStorage.getItem("masterpoints_userTarjeta"),
+        tarjeta:window.localStorage.getItem("plusconsentido_userTarjeta"),
         os:devicePlatform
     };
     

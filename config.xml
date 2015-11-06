@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget 
-	id="com.mypoints.mobil" 
-	version="2.6.6" 
+	id="com.plusconsentido.mobil" 
+	version="3.0.0" 
 	xmlns="http://www.w3.org/ns/widgets" 
 	xmlns:gap="http://phonegap.com/ns/1.0"
 	>
-    <name>My Master Points</name>
+    <name>Plus Consentido</name>
     <description>
-        Aplicación para el monedero electrónico My Master Points
+        Aplicación para el monedero electrónico Plus Consentido
     </description>
-    <author email="dev@mymasterpoints.com" href="http://mymasterpoints.com">
-        My Master Points Dev Team
+    <author email="desarrollo@plusconsentido.mx" href="http://plusconsentido.mx">
+        Equipo de Desarrollo Plus Consentido
     </author>
     
     <content src="index.html" />
