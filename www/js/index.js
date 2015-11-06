@@ -4,10 +4,16 @@ var gcmScript="index.php/tienda/saveRegGCM";
 var optionScript="index.php/tienda/mobileSaveOpt";
 var miUbicacion={lat:0,lng:0}, mapa, watchID, estado=0,retornoObj, 
 	bounds, myWindow, thePush, panelOpen=false, dorefresh=false, empresas,
-	mapaIniciado=false, markersArray=[],mapaCargado=false,idioma,devicePlatform,pushNotification,listoesto;
+	mapaIniciado=false, markersArray=[],mapaCargado=false,idioma,devicePlatform,pushNotification;
 	
 var app = {
-	debug:false,
+	
+	
+	
+	debug:true,  //salidas console activas o no
+	
+	
+	
     // Application Constructor
     initialize: function() {
         this.bindEvents();
